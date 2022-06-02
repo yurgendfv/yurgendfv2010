@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* MEDIA DEL INDEX */
+
+
+@media (min-width: 768px) {
+
+       .Header {
+        height: 80px;
+    }
+
+    .Header img  {
+        padding: 2px auto;
+        margin-left: 40px;
+        height: 90px;
+    }
+
+    .Header__Menu .Menu {
+        top: 82px
+    }
+    
+    .Header__Buscador {
+    display: inline;
+    position: absolute;
+    top: 12px;
+    right: 70px;  
+    font-size: 25px;
+    }
+    
+    .Header__Buscador input {
+        background: linear-gradient(1deg, #51b7e3, #fff);
+        opacity: 0.9;
+        border: none;
+     } */
+
+    /* QUERYS MAIN */
+    .Marca{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .Marca .First__Grid h2,
+    .Marca .First__Grid p {
+        font-size: 20px;
+    }
+
+    .Marca .Second__Grid iframe   {
+        width: 90%;
+        height: 100%;
+    }
+
+    .Title__Two {
+        margin: 20px auto;
+        font-weight: 600;
+        font-size: xx-large;
+    }
+
+    .Main__Variety {
+        margin: 30px auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+/* VARIETY ONE */
+    .Main__Variety .Variety__One,
+    .Main__Variety .Variety__One p,
+    .Main__Variety .Variety__One img{
+        grid-column: 1/3;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    .Variety__One h3 {
+        border-bottom: #fff 2px solid;
+        margin-bottom: 3px;
+        font-size: 25px;
+    }
+/* VARIETY TWO */
+
+    .Main__Variety .Variety__Two,
+    .Main__Variety .Variety__Two p,
+    .Main__Variety .Variety__Two img {
+        grid-row: 2 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .Variety__Two h3 {
+        border-bottom: 2px #fff solid ;
+        font-size: 20px;
+    }
+     
+    /* VARIETY SEVEN */
+    .Main__Variety .Variety__Seven,
+    .Main__Variety .Variety__Seven p,
+    .Main__Variety.Variety__Seven img {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    
+    .Main__Variety .Variety__Seven h3 {
+        margin-bottom: 8px;
+        font-size: 25px;
+    }
+   } 
+
+
+   @media (min-width: 1024px) 
+   {
+       .Marca .First__Grid {
+        height: 100px;
+        font-size: 30px;
+        }
+        .Marca .First__Grid :first-child {
+            padding: 10px;
+        }
+       
+      .Marca .Second__Grid iframe
+       {
+        height: 200px;
+        width: 95%;
+        margin-top: -38px;
+       } 
+
+       .Main__Variety {
+           grid-template-columns: repeat(3,1fr);
+       }
+
+       .Main__Variety .Variety__One {
+        grid-column: 2 / 4
+       }
+
+       .Main__Variety .Variety__Two {
+        grid-row: 1/4;
+       }
+
+       .Main__Variety .Variety__Seven{
+        grid-column: 1/-1
+       }
+
+       .Footer {
+           font-size: 30px;
+       }
+       .Social__Network i {
+           padding: 0px 40px;
+       }
+
+       .Footer p {
+           font-size: 25px
+       }
+   }
+
+   /* QUERYS ROUTES. */
+   @media (min-width: 768px){
+
+   .Header__Buscador--Second {
+    display: inline;
+    position: absolute;
+    top: 12px;
+    right: 65px;  
+    font-size: 25px;
+   }
+
+   .Header__Buscador--Second label i {
+    margin-right: 156px;
+   }
+
+   .Header__Buscador--Second input {
+    background: linear-gradient(1deg, #51b7e3, #fff);
+    opacity: 0.9;
+    border: none;
+}
+
+    .Title__Routes {
+        margin-top: 86px;
+        padding: 20px;
+        
+    }
+
+    .Title__Routes h1,
+    .Title__Routes h3 {
+        margin: 10px auto;
+        font-size: 60px;
+    }
+
+    .Title__Routes--Second {
+        margin: 10px auto;
+        font-size: 60px;
+        border-bottom: 2px #000 solid ;
+        background: linear-gradient(1deg, #51b7e3, #fff);
+    }
+
+    .Rutas__Listas {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .Rutas__Listas {
+        width: 100%;
+        margin: auto;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0.5rem;
+    }    
+}
+
+/* QUERYS CREATE YOUR ROUTE */
+
+@media (min-width: 1024px) {
+
+    .Title__Second {
+        font-size: 100px;
+    }
+    .Image__Create{
+        width: 90%;
+        border-bottom: #000 5px solid;
+    }
+    .Image__Create img {
+        height: 300px;
+    }
+}
+
+/* QUERYS RECOMENDATIONS */
+
+@media (min-width: 768px) {
+    .Section__First {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Section__First .Section__Sub {
+        background: none;
+        border: none;
+    }
+
+    .Section__First .Section__Sub span {
+        background: #51b7e3;
+        border-bottom: #000 3px solid;
+    }
+
+    .Recomendations__Title {
+        margin-top: 100px;
+}
+}
+
+@media (min-width: 768px) {
+
+
+        .Contact__Image {
+            display: flex;
+            height: 100%;
+            margin: 0px auto
+        }
+
+        .Contact__Second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+
+@media (min-width: 1024px) {
+    
+}
+        .Title__Contact {
+            font-size: 60px;
+        }
+

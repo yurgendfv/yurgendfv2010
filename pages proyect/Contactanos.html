@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu ruta</title>
+    <link rel="shortcut icon" href="../img/Vamos al cerro edit.jpg" type="image/x-icon">
+    <!-- BIBLIOTECA DE ICONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e902341a70.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FUENTE GOOGLE -->
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
+   <!-- ESTILOS CSS -->
+   <link rel="stylesheet" href="../css/media.css">
+   <link rel="stylesheet" href="../css/querys.css">
+</head>
+<body>
+    <Header class="Header">
+
+        <div class="Header__Logo">  
+            <a href="../index proyecto.html"><img src="../img/Logo__Vamos__al__cerro.png" alt="Logo__Vamos__al__cerro"></a>
+        </div>
+        <div class="Header__Menu">   
+            <input type="checkbox" id="Nav__Button">
+            <label for="Nav__Button"><i class="fa-solid fa-bars"></i></label>
+    <nav class="Menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./routes-pages.html">Rutas</a></li>
+            <li><a href="./Cra tu ruta.html" target="self">Crea tu ruta</a></li>
+            <li><a href="./Recomendations.html">Recomendaciones</a></li>
+            <li><a href="./Contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="Header__Buscador--Second">
+        <label for="Buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input type="text" id="Buscar">
+    </div>
+</Header>
+
+<main>
+
+       
+<section class="Contact">
+
+    <div>
+        <h1 class="Title__Contact">Contactanos</h1>
+    </div>
+
+    <div>
+        <h5>Por si quedaste con alguna duda, tienes alguna sugrencia o idea que nos quieras plantear para mejorar la comunidad o cualquier cosa que consideres necesario preguntarnos, contactanos a traves de este formulario dejadonos todos tus comentarios que seran muy bien recibidos y recibiras, asimismo, una respuesta. ¡Disfruta tu salida!</h5>
+
+    </div>
+    <div class="Contact__Second">
+        
+        <div class="Contact__Primera">
+
+            <img class="Contact__Image " src="../img/header contactanos.jpg" alt="Contact">
+       </div>
+
+        <form action="enviar.PHP">  
+            <div class="Contact__List">
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre">
+            </div>
+            <div        class="Contact__List">
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido">
+            </div>
+            <div class="Contact__List">
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email">
+            </div> 
+            <div class="Contact__List">
+                <p>Dejanos tu comentario o sugerencia.</p>     
+                <textarea name="Sugerencias y Comentarios" id="Sugerencias" cols="40" rows="15"></textarea>
+            </div>    
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">  
+    
+        </form>
+    </div>
+</section>
+
+</main>
+
+<footer class="Footer">
+   
+    <div class="Social__Network">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+
+
+        <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+
+
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+
+
+        <p> Web de pruebra para mi proyecto, todos los derechos reservados.</p>
+
+    </div> 
+</footer>
+</body>
+</html>

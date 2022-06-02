@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu ruta</title>
+    <link rel="shortcut icon" href="../img/Vamos al cerro edit.jpg" type="image/x-icon">
+    <!-- BIBLIOTECA DE ICONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/e902341a70.js" crossorigin="anonymous"></script>
+      <!-- FUENTE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/querys.css">
+
+</head>
+<body>
+    <Header class="Header">
+        <div class="Header__Logo">
+           <a href="../index proyecto.html"> <img src="../img/Logo__Vamos__al__cerro.png" alt="Logo__Vamos__al__cerro"></a>
+        </div>
+        
+        <div class="Header__Menu">   
+                <input type="checkbox" id="Nav__Button">
+                <label for="Nav__Button"><i class="fa-solid fa-bars"></i></label>
+
+                <nav class="Menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./routes-pages.html">Rutas</a></li>
+                        <li><a href="./Cra tu ruta.html" target="self">Crea tu ruta</a></li>
+                        <li><a href="./Recomendations.html">Recomendaciones</a></li>
+                        <li><a href="./Contactanos.html">Contactanos</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+    <div class="Header__Buscador">
+        <label for="Buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input type="text" id="Buscar">
+    </div>
+</Header>
+
+<main class="Form">
+    <div>
+        <h1 class="Title__Second">Crea tu ruta</h1>
+    </div>
+
+    <div class="Image__Create">
+        <img src="../img/image for created your route.jpg" alt="mountains">
+    </div>
+        <form class="Form__Form" action="Enviar.php">
+            <div class="Button">
+                <label for="Nombres">Nombres: </label>
+                <input type="text" id="Nombres">
+            </div>
+            <div class="Button">
+                <label for="Apellido">Apellidos:</label>
+                <input type="text" id="Apellido">
+            </div>
+
+            <div class="Button">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="Button">
+                <label for="Fecha">Fecha de ruta</label>
+                <input type="date" name="Fecha-de-ruta" id="Fecha">
+            </div>
+
+            <div class="Button">
+
+                <p>¿Que quieres hacer?</p>
+
+                <select name="Ruta" id="Ruta">
+
+                    <option value="01">Ciclyng.</option><!-- Aqui quiero que se desplegue un menu de opciones entre Ciclyng and trekking, y a su vez un sub-menu para escoger las rutas que tenga en la pag -->
+                    <option value="02">Trekking.</option>
+                </select>
+                    
+                
+                <!--  ¿Podría poner logos a las opciones?. -->
+                <select name="Options" id="Options">
+                    <option value="Ruta 2">Ruta a Yerba Loca. Ruta de intesidad media alta. </option>
+
+                    <option value="Ruta 3">Ruta farellones. Ruta de intensidad alta.</option>
+
+                    <option value="Ruta 4">Subida al Cerro la cruz. Alta intensidad.</option>
+
+                    <option value="Ruta 5">Caminata a la cascada San Ramon. Intensidad baja.</option>
+
+                    <option value="Ruta 5">Crea tu propia ruta.</option>
+                    
+                    <!-- Esta es la opcion clave pues aqui es donde ela persona puede crear su propia ruta que es la finalidad del producto -->
+                </select>
+            </div>
+
+            <div class="Button">
+                <p>¿A cuantas personas quisieras invitar?. Recuerda entre mas mejor.</p>
+
+                <label for="Cantidad">Numero de personas a invitar:</label>
+                <input type="number" name="Numero de personas" id="Cantidad">
+            </Div>
+
+            <Div class="Button">
+                <p>Dejanos saber que tipo de perfil buscas para tus compañeros de aventura</p>
+
+                <textarea name="Comentarios" id="coments" cols="50" rows="5" placeholder="Escribenos que buscas"></textarea>
+
+            </div>
+
+            <div class="Invitation">
+
+                <label for="Invitacion">Deseo que me lleguen notificaciones de posibles nuevas rutas con otras personas</label>
+
+                <input type="Checkbox" id="Si">
+            </div>  
+            <div class="Invitation"></div>
+                <label for="Compartir">Compratir la invitación en redes sociales</label>
+
+                <input type="checkbox" id="Si">
+            
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar todo">
+            </div>    
+        </form>
+</main>
+
+<footer class="Footer">
+
+        <div class="Social__Network">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+
+
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+    
+    
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    
+    
+            <p> Web de pruebra para mi proyecto, todos los derechos reservados.</p>
+    
+        </div> 
+</footer>
+</body>
+</html>

@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0%;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-image: url(../img/imagen\ para\ el\ body.jpeg);
+    background-size: cover;
+}
+
+/* Header panatalla dispoditivos pequeños. */
+.Header {
+    width: 100%;
+    height: 62px;
+    background:linear-gradient(100deg, #51b7e3, #fff);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 100;
+  } 
+
+  /* Logos.*/ 
+
+  .Header__Logo {
+      width: 98%;
+      margin: auto;
+  }
+
+.Header__Logo img {
+    height: 62px;
+} 
+
+/* Buscador de mi header.
+*/
+.Header__Buscador {
+    display: none;
+}
+
+
+
+/* Menu Responsive */
+
+.Header__Menu #Nav__Button {
+    display: none;
+}
+
+.Header__Menu label {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+  cursor: pointer;
+}
+
+.Header__Menu nav ul {
+    list-style: none;
+}
+
+
+.Header__Menu .Menu{
+    display: block;
+    position: absolute;
+    top: 62px; 
+    left: 0;    
+    background: #00ffffd9;
+    width: 100%;
+    height: 100vh;
+    margin-top: -2px;
+    text-align: center;
+    padding: 20px;
+
+    /* Animacion del Menu. */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1 s;
+    
+   margin-left: -100%;
+}
+.Header__Menu .Menu ul li a {
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 10px;
+}   
+
+.Header__Menu .Menu ul li a:hover {
+    background: #333333a1;
+    color: #ffffff;
+    border: 1px solid black;
+    animation: Primera__Animacion 2.5s ease-in-out forwards ;
+}
+
+@keyframes Primera__Animacion {
+    0% {
+        border-radius: 5px;
+        transform: translateX(0%);
+        
+    }
+    
+    25% {
+        border-radius: 10px;
+        
+    }
+
+    50% {
+        background: #fff;
+        color: black;
+        border-radius: 15px;
+        transform: translateX(50%);
+       
+        
+    }
+
+    75% {
+        background: #9fe0e0d9 ;
+        color: #fff;
+        border-radius: 20px;
+        }
+
+    100% {
+        background: #00ffffd9;
+        color: #000;
+        border-radius: 30px;
+        transform: translateX(0%);
+        
+        }
+}
+
+#Nav__Button:checked ~ .Menu {
+    margin-left: 0%;
+} 
+
+/* MARCA AND VIDEO */
+
+
+#Principal__Section {
+
+   width: 90%;
+   height: auto;
+   margin: 60px auto 20px auto;
+   text-align: center;
+}
+
+
+.Marca {
+    
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+    scroll-behavior: smooth;
+      
+      
+ }
+   
+.Marca .First__Grid {
+    background-image: url(../img/blue_mountains_cliff_edge.jpg);
+    background-position: top;
+    margin: 15px auto;
+    font-size: medium;
+}
+
+.Title__Two {
+    text-transform: capitalize;
+    margin: 0px auto;
+}
+
+.Title__Two a {
+    text-decoration: none;
+    color: black;
+}
+.Title__Two a:hover {
+    background: #51b7e3;
+    border-bottom: #ffffff 1px solid;
+
+}
+
+/* SECOND SECTION */
+
+.Main__Variety p {
+    display: none;
+}
+
+.Main__Variety {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+ .Variety__One,
+ .Variety__Two,
+ .Variety__Three,
+ .Variety__Four,
+ .Variety__Five,
+ .Variety__Six,
+ .Variety__Seven, 
+ .Variety__Eigth {
+    border-radius : 6px  
+    ;
+    background: #51b7e3;
+    border: #fff 2px solid;    
+}
+
+.Main__Variety .Variety h3 {
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* ENLACE*/
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Footer .Enlace a {
+    text-decoration: none;
+    color: black;
+    background:#51b7e3;
+    border: 3px white ridge;
+}
+
+.Footer .Enlace a:hover {
+    background: #000    ;
+    border: #51b7e3 3px ridge;
+    color: #51b7e3;
+}
+
+.Social__Network {
+    margin-top: 20px;
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(100deg,#51b7e3,#fff) #51b7e3;
+}
+
+.Social__Network a {
+    padding: 0 30px;
+    
+}
+ 
+.Social__Network i{
+    font-size: 30px;
+    color: #000;
+ }
+
+ .Social__Network p {
+    text-transform: capitalize;
+    font-weight:600
+}
+
+
+
+
+/* SEARCH ROUTES */
+.Header__Buscador--Second {
+    display: none;
+}
+/* MAIN ROUTE PAGE*/
+
+.Title__Routes {
+    width: 98%;
+    height: auto;
+    margin: 66px auto 0px auto;
+    text-align: center;
+
+}
+
+.Title__Routes h1 {
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(100deg,#51b7e3,#fff) #51b7e3;
+    border: 3px black solid;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+.Title__Routes h3 {
+    font-size: 40px;
+    border-bottom: 2px #ffff solid;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-bottom: 3px black solid;
+   color: #000;
+   background: linear-gradient(1deg, #51b7e3, #fff);
+}
+
+.Rutas img {
+    width: 80%;
+}
+
+.Title__Routes--Second {
+    width: 98%;
+    height: auto;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Rutas {
+    width: 98%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.Rutas__Listas {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.Rutas__Rutas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin: 10px auto ;
+}
+
+.Rutas__Rutas a {
+    text-decoration: none;
+    color: black;
+}
+
+.Rutas__Rutas a:hover {
+    background: #000;
+    color: #fff;
+    font-weight: 800;
+}
+
+.Rutas__Rutas span {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(1deg, #51b7e3, #fff);;
+}
+
+.Rutas__Rutas p {
+    display: none;
+}
+
+
+/* INICIO PAGINA CREA TU RUTA. */
+
+
+.Form {
+    width: 90%;
+    height: auto;
+    margin: 80px auto;
+    background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Form .Image__Create {
+    height: auto;
+    margin: 10px auto ;
+    display: flex;
+    justify-content: center;
+}
+.Form .Image__Create img {
+    width: 90%;
+}
+
+.Title__Second {
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: #000 solid 3px;
+}
+.Form__Form {
+    margin: 10px auto;
+}
+
+.Button {
+    margin: 20px auto;
+    align-items: center;
+}
+
+.Invitation {
+    margin-top: 20px;
+}
+
+
+
+.Button input {
+    background:  linear-gradient(1deg, #51b7e3a8, #ffffffb3);
+}
+
+/* RECOMENDETIONS PAGE */
+
+#Recomendaciones {
+    width: 90%;
+    height: auto;
+    margin: 70px auto 2px auto;
+    
+}
+
+.Header__Section {
+    width: 100%;
+}
+ img {
+    height: 100px;
+}
+
+.Recomendations__Title {
+    text-align: center;
+    font-size: 20px;
+    border-bottom: #000 3px solid;
+    font-style: italic;
+    background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);
+}
+
+.Recomendations__Subtitle {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);
+    border-bottom: 3px black solid;
+}
+
+.Section__First {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    margin: 10px auto;
+}
+
+.Section__First .Section__Sub {
+    text-align: center;
+    font-size: 30px;
+    background: #51b7e3;
+    border-bottom: #000 3px solid;
+}
+.Section__First ul{
+    background: #51b7e3d9;
+}
+
+.Section__First ul li {
+    list-style: none;
+    margin: 20PX 10px;
+}
+
+.Before__Footer {
+    background: #51b7e3d9;
+    text-align: center;
+}
+
+
+/* CONTACT PAGE */
+
+.Contact {
+    width: 95%;
+    height: auto;
+    margin: 70px auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.Title__Contact {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 0px ;
+    background: #51b7e3d9;
+    font-size: 30px;
+    border-bottom: #000 3px solid;
+} 
+
+.Contact__Image {
+    display: none;
+}
+
+.Contact h5 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.Contact__Second {
+    background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);
+}
+
+.Contact__Second .Contact__List {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.Contact__List input {
+    background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

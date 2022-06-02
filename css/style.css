@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background-image: url(../img/imagen\ para\ el\ body.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+}
+
+#Header {
+    width: 100%;
+    height: 200px;
+    border: 2px;
+    display: inline-block;
+}
+
+.Header__Titulo {
+    width: 300px;
+    height: 30PX;
+    position: relative;
+    left: 578px;
+    top: 34px;
+}
+
+.Header__Imagen  {
+    margin-top: 10px;
+    margin-left: 200px;
+    position: absolute;
+    top: 0%;
+}
+/* El menu debo darle estilo de hamburguesa, pues siento que se ve muy cargada la pag. */
+
+.Menu {
+    margin-top: 60px;
+}
+
+.Menu ul li {
+    display: inline;
+    list-style: none;
+    position: relative;
+    left: 1000px;
+    bottom: 70px;
+    margin-top: 60px;
+}
+
+.Menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border: #ffffff36  2px solid;
+}
+
+.Menu ul li a:hover {
+    background-color: rgb(162, 209, 223);
+}
+
+.Header__Buscador {
+    height: 20px;
+    width: 500px;
+    position: relative;
+    left: 1000px;
+    bottom: 60px;
+}
+
+.Header__Buscador input {
+    background-image: url(../img/imagen\ para\ el\ body.jpeg);
+    background-position: initial ;
+    border: none;
+    color: white;
+
+}
+   
+/* Hasta aquí mi Header, debo hacerle algunos cambios mas. */
+
+#Seccion__principal {
+   width: 100%;
+   height: 500px;
+   display: inline;
+   background-color: mintcream;
+}
+
+.Marca {
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-image: url(../img/mountain_range_mountain_scene.jpg);
+    background-position: center;
+    color: beige;
+    display: inline-block;
+}
+
+
+.Articulo {
+    display: block;
+    position: relative;
+    left: 700px;
+    bottom: 300px;
+    width: 800px;
+    height: 300px;
+}
+/* Hasta este punto mi primer Section. */
+
+ .Variety {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    position: relative;
+    top: -269px;
+    /* flex-flow: row nowrap; */
+   /*  align-items: flex-start; */
+}
+
+.Variety__Uno {
+    height: auto;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.Variety__Dos {
+    height: auto;
+    padding: 20px;
+    margin: 2px;
+    border: 1px black solid;
+}
+
+.Variety__Tres {
+    margin: 2px;
+    padding: 20px;
+    border: 1px black solid;
+}
+
+.Variety__Cuatro {
+    margin: 2px;
+    padding: 20px;
+    border: 1px black solid;
+}
+
+.Enlace {
+    position: relative;
+    top: -230px;
+    left: 350px;
+    font-size: larger;
+    width: 70%;
+}
+
+.Enlace a {
+    text-decoration: none;
+    color: white;
+    font-size: -webkit-xxx-large;
+}
+
+.Enlace a:hover {
+    background-color: rgb(162, 209, 223);
+}
+
+/* Desde este punto, comienza mi footer del index.  */
+
+.Social__Network {
+   /*  display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    background-image: url(../img/Mountain__Header--2.jpg);
+    margin-top: -120px;
+}
+
+.Social__Network a .Facebook__Imagen {
+    width: 50px;
+}
+
+/* Segundo Html: Crea tu ruta. */
+/* footer de pagina Crea tu ruta */
+.Social__Network--segundo {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    margin-top: 60px;
+    background-image: url(../img/Mountain__Header--2.jpg);
+    width: 100%;
+
+}
+
+.Titulo__Segundo {
+   /*  display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    text-transform: capitalize;
+    font-size: -webkit-xxx-large;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.Formulario__Forma {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    width: 50%;
+    margin-left: 386px;
+    background: radial-gradient(black, transparent);
+    color: white;
+}
+
+.Formulario .Button__Uno { 
+    margin: 10px 5px 10px 5px;
+}
+
+.Formulario .Button__Uno input:hover {
+    background-color: black;
+    color: white;
+}
+
+.Formulario .Button__Dos {  
+    margin: 10px 5px 10px 5px;
+}
+
+.Formulario .Button__Dos input:hover {
+    background-color: black;
+    color: white;
+}
+/* Como hago que hover me tome tambien la pestaña que se despliega de opciones.*/
+.Formulario .Button__Tres {
+    margin: 20px 5px 20px 5px;
+}
+
+.Formulario .Button__Tres p {
+    text-transform: capitalize;
+    font-size: xxx-large;
+    align-items: center;
+} 
+
+.Formulario .Button__Tres select:hover {
+    background-color: black;
+    color: white;
+}
+
+.Formulario .Button__Cuatro {
+    margin: 20px 5px 20px 5px;
+   /*  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.Formulario .Button__Cuatro p {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.Button__Cuatro input:hover {
+    background-color: black;
+    color: white;
+}
+
+.Formulario .Button__Cinco {
+    margin: 20px 5px 20px 5px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.Formulario .Button__Cinco p {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.Button__Cinco textarea:hover {
+    background-color: radial-gradient(black, transparent);
+}
+
+/* Comienza mi pagina de rutas. */
+
+.Titulo__Rutas {
+    /* display: flex;
+    justify-content: center;  */
+    font-size: 40px;
+    font-style: oblique;
+    text-decoration: underline white;
+    margin-top: -20px;
+}
+
+.Titulo__Rutas--Segundo {
+    /* display: flex;
+    justify-content: center; */ 
+    font-size: 40px;
+    font-style: oblique;
+    text-decoration: underline white;
+}
+
+.Rutas {
+  /*   display: flex;
+    flex-flow: column nowrap; */
+    width: 100%;
+    height: 100%;
+}
+
+ .Rutas__Listas {
+    /* display: flex; */
+    padding: 5px;
+    margin: 10px 5px 10px 5px; 
+}
+
+.Rutas__Rutas {
+  /*   display: flex;
+    text-align: center;  */
+   padding: 10px;
+    margin: 5px; 
+} 
+
+.Rutas__Rutas span {
+    font-size: x-large;
+    text-transform: capitalize;
+    text-decoration: underline black;
+}
+.Rutas__Rutas--Trekking {
+   /*  display: flex;
+    text-align: center; */
+    padding: 10px;
+    margin: 5px;
+}
+.Rutas__Rutas--Trekking span {
+    font-size: x-large;
+    text-transform: capitalize;
+    text-decoration: underline black; 
+}
+ 
+.Rutas__Rutas--Trekking li p {
+    background-color: slategrey;
+    background-clip: content-box;  
+
+}
+.Rutas ul li {
+    list-style: none;
+}
+
+.Rutas ul li a {
+    text-decoration: none;
+    color: black;
+}
+.Rutas ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.Rutas__Imagenes {
+    width: 300px;
+    height: 200px;
+}
+
+
+/* Comienzo de la pagina Recomendaciones.*/
+
+.Recomendaciones__Titulo {
+    position: relative;
+    left: 480px;
+    width: 600px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.Recomendaciones__Subtitulo {
+    text-align: center;
+    font-size: 300%;
+    text-transform: capitalize;
+    text-decoration: underline white;   
+}
+
+.Header__Section {
+    width: 1519.200px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+#Section__General {
+   /*  display: flex; */
+    padding: 10px 20px;
+    margin: 20px 100px 20px 100px;
+}
+
+.Section__Sub {
+    /* text-align: center; */
+    font-size: 200%;
+    text-transform: capitalize;
+    text-decoration: underline white; 
+}
+
+.Section__First ul {
+    /*  text-align: start; */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    width: 600px; 
+}
+
+.Section__First ul li {
+    list-style: urdu;
+}
+
+.Section__First--Modificacion ul{ 
+   /*  text-align: start; */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    width: 600px; 
+    background-color: slategrey;
+    background-clip: content-box;
+}
+
+.Section__First--Modificacion ul li {
+    list-style: urdu
+}
+
+/* Final de mi pagina de recomendaciones. Y comienzo de mi pagina de contactanos.*/
+
+.Titulo__Contact {
+    position: relative;
+    left: 480px;
+    width: 600px;
+    margin: 0px 0px 30px 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: -webkit-xxx-large;
+    text-decoration: underline;
+}
+
+
+
+.Contact__Imagen {
+    width: 400px;
+    height: 600px;
+    margin-left: 60px;
+}
+
+.Contact__Primera {
+     display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.Contact__Segunda {
+    width: 800px;
+    height: max-content;
+    position: absolute;
+    right: 200px;
+    top: 450px;
+    font-size: x-large;
+    background: radial-gradient(black, transparent)
+}
+
+.Contact__List  {
+    padding: 10px;
+}
+
+.Contact__List input {
+    background-color: unset;
+}
+
+.Contact__List input:hover {
+    background-color: slategrey;
+    color: white;
+}
+
