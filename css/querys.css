@@ -37,6 +37,7 @@
 
     /* QUERYS MAIN */
     .Marca{
+
         margin-top: 20px;
         display: grid;
         grid-template-columns: 1fr;
@@ -123,7 +124,7 @@
    @media (min-width: 1024px) 
    {
        .Marca .First__Grid {
-        height: 100px;
+        height: 150px;
         font-size: 30px;
         }
         .Marca .First__Grid :first-child {
