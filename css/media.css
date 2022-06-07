@@ -7,10 +7,9 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-image: url(../img/imagen\ para\ el\ body.jpeg);
-    background-size: cover;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background-color: #276e90 !important;
 }
 
 /* Header panatalla dispoditivos pequeños. */
@@ -23,8 +22,51 @@ body{
 }
 
 
+.ownClass ul{
+    align-items: center;
+}
 
-.Header {
+.ownClass ul li a:hover{
+    animation: Primera__Animacion 2s ease-in-out forwards 
+}
+
+@keyframes Primera__Animacion {
+
+    0% {
+        border-radius: 5px;
+        transform: translateX(0%);
+    }
+    
+    25% {
+        border-radius: 10px;
+        transform: translateX(25%)
+    }
+
+    50% {
+        background: #fff;
+        color: black;
+        border-radius: 15px;
+        
+    }
+
+    75% {
+        background: #9fe0e0d9 ;
+        color: #fff;
+        border-radius: 20px;
+        transform: translateX(-25%);
+        }
+
+    100% {
+        background: linear-gradient(100deg, #51b7e3, #77c9ec, rgb(177, 175, 175) );
+        color: #000;
+        border-radius: 30px;
+        transform: translateX(0%);
+        }
+} 
+
+
+
+/* .Header {
     width: 100%;
     height: 62px;
     background:linear-gradient(100deg, #51b7e3, #fff);
@@ -42,7 +84,7 @@ body{
   } 
 
   /* Logos.*/ 
-
+/* 
   .Header__Logo {
       width: 98%;
       margin: auto;
@@ -50,19 +92,19 @@ body{
 
 .Header__Logo img {
     height: 62px;
-} 
+}  */
 
 /* Buscador de mi header.
 */
-.Header__Buscador {
+/* .Header__Buscador {
     display: none;
 }
+ */
 
 
+/* /* Menu Responsive */
 
-/* Menu Responsive */
-
-.Header__Menu #Nav__Button {
+/* .Header__Menu #Nav__Button {
     display: none;
 }
 
@@ -76,10 +118,10 @@ body{
 
 .Header__Menu nav ul {
     list-style: none;
-}
+} */
 
 
-.Header__Menu .Menu{
+./* Header__Menu .Menu{
     display: block;
     position: absolute;
     top: 62px; 
@@ -92,14 +134,14 @@ body{
     padding: 20px;
 
     /* Animacion del Menu. */
-    transition-property: all;
+/*     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1 s;
     
-   margin-left: -100%;
-}
-.Header__Menu .Menu ul li a {
+   margin-left: -100%; 
+} */
+/* .Header__Menu .Menu ul li a {
     width: 50%;
     margin: auto;
     text-decoration: none;
@@ -115,53 +157,18 @@ body{
     color: #ffffff;
     border: 1px solid black;
     animation: Primera__Animacion 2.5s ease-in-out forwards ;
-}
+}   */
 
-@keyframes Primera__Animacion {
-    0% {
-        border-radius: 5px;
-        transform: translateX(0%);
-        
-    }
-    
-    25% {
-        border-radius: 10px;
-        
-    }
 
-    50% {
-        background: #fff;
-        color: black;
-        border-radius: 15px;
-        transform: translateX(50%);
-       
-        
-    }
-
-    75% {
-        background: #9fe0e0d9 ;
-        color: #fff;
-        border-radius: 20px;
-        }
-
-    100% {
-        background: #00ffffd9;
-        color: #000;
-        border-radius: 30px;
-        transform: translateX(0%);
-        
-        }
-}
 
 #Nav__Button:checked ~ .Menu {
     margin-left: 0%;
 } 
-
+ 
 /* MARCA AND VIDEO */
 
 
 #Principal__Section {
-
    width: 90%;
    height: auto;
    margin: 60px auto 20px auto;
@@ -190,17 +197,36 @@ body{
 .Title__Two {
     text-transform: capitalize;
     margin: 0px auto;
+    transition:all;
+    
 }
 
 .Title__Two a {
     text-decoration: none;
     color: black;
 }
-.Title__Two a:hover {
-    background: #51b7e3;
-    border-bottom: #ffffff 1px solid;
+/* .Title__Two a:hover {
+    animation-name: Second__Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}   
 
-}
+@keyframes Second__Animation {
+
+    0%{
+        background: #fff;
+    }
+
+    100% {
+        font-size: 30px;
+        background: #51b7e3;
+        border-bottom: #ffffff 1px solid;
+    }
+
+    
+} */
+
 
 /* SECOND SECTION */
 
@@ -258,7 +284,6 @@ body{
 .Social__Network {
     margin-top: 20px;
     width: 100%;
-    height: 68px;
     background: linear-gradient(100deg,#51b7e3,#fff) #51b7e3;
 }
 
@@ -370,14 +395,12 @@ body{
 
 
 /* INICIO PAGINA CREA TU RUTA. */
-
-
 .Form {
     width: 90%;
     height: auto;
     margin: 80px auto;
     background: linear-gradient(1deg, #51b7e3a8, #ffffffb3);
-    font-size: 25px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,9 +425,13 @@ body{
     margin: 10px auto;
 }
 
-.Button {
+.Button { 
     margin: 20px auto;
     align-items: center;
+}
+
+.Button input {
+    border-radius: 10px;
 }
 
 .Invitation {
