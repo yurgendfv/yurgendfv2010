@@ -142,7 +142,7 @@
            grid-template-columns: repeat(3,1fr);
        }
 
-       .Main__Variety .Variety__One {
+        .Main__Variety .Variety__One {
         grid-column: 2 / 4
        }
 

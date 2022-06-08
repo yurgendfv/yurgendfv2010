@@ -159,11 +159,11 @@ body {
     animation: Primera__Animacion 2.5s ease-in-out forwards ;
 }   */
 
-
-
 #Nav__Button:checked ~ .Menu {
     margin-left: 0%;
 } 
+
+
  
 /* MARCA AND VIDEO */
 
@@ -240,8 +240,7 @@ body {
     grid-template-columns: 1fr;
     gap: 0.8rem;
 }
-
- .Variety__One,
+.Variety__One,
  .Variety__Two,
  .Variety__Three,
  .Variety__Four,
@@ -252,9 +251,8 @@ body {
     border-radius : 6px  
     ;
     background: #51b7e3;
-    border: #fff 2px solid;    
+    border: #fff 2px solid; 
 }
-
 .Main__Variety .Variety h3 {
     padding-bottom: 5px;
     text-transform: capitalize;

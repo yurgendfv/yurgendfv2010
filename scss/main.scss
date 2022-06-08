@@ -1,0 +1,100 @@
+@import 'animation';
+@import 'variety';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    background-color: #276e90 !important;
+}
+
+/* Header para pantallas pequeñas */
+
+.ownClass {
+    background: $Color__Back;
+    font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    .Logo {
+        width: 200px;     
+    }
+        ul {
+            align-items: center;
+            a:hover{
+                animation: Primera__Animacion 1.2s ease-in-out forwards;
+        }
+
+    }
+}
+
+
+/* Marca and Video */
+
+#Principal__Section {
+    width: 90%;
+    height: auto;
+    margin: 60px auto 20px auto;
+    text-align: center;
+
+
+        .Marca{
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+        scroll-behavior: smooth;
+
+            .First__Grid {
+                background-image: url(../img/blue_mountains_cliff_edge.jpg);
+                background-position: top;
+                margin: 15px auto;
+                font-weight: 700;
+                border-radius: 20px;
+
+                & h2{
+                    font-size: 30px;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .Title__Two {
+            text-transform: capitalize;
+            margin: auto;
+            padding: 20px;
+            font-size: 20px;
+            a {
+                text-decoration: none;
+                color: black;
+                background: $Color__Back;
+                border-radius: 10px;
+                margin: 20px auto;
+            }
+
+            a:hover {
+                animation-name: Second__Animation;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite; 
+            }
+        }
+}
+
+.Main__Varierty {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+   
+
+        
+
+}

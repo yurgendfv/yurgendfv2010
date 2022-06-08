@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+@-webkit-keyframes Primera__Animacion {
+  0% {
+    border-radius: 5px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    border-radius: 10px;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  50% {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+  }
+  75% {
+    background: #9fe0e0d9;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+    color: #000;
+    border-radius: 30px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes Primera__Animacion {
+  0% {
+    border-radius: 5px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    border-radius: 10px;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  50% {
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+  }
+  75% {
+    background: #9fe0e0d9;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+    color: #000;
+    border-radius: 30px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes Second__Animation {
+  0% {
+    border: 2px #979595 dashed;
+  }
+  25% {
+    font-size: 15px;
+  }
+  40% {
+    font: 18px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    border-bottom: 5px #032e39 solid;
+  }
+}
+
+@keyframes Second__Animation {
+  0% {
+    border: 2px #979595 dashed;
+  }
+  25% {
+    font-size: 15px;
+  }
+  40% {
+    font: 18px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    border-bottom: 5px #032e39 solid;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: #276e90 !important;
+}
+
+/* Header para pantallas pequeñas */
+.ownClass {
+  background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+  font-size: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+}
+
+.ownClass .Logo {
+  width: 200px;
+}
+
+.ownClass ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ownClass ul a:hover {
+  -webkit-animation: Primera__Animacion 1.2s ease-in-out forwards;
+          animation: Primera__Animacion 1.2s ease-in-out forwards;
+}
+
+/* Marca and Video */
+#Principal__Section {
+  width: 90%;
+  height: auto;
+  margin: 60px auto 20px auto;
+  text-align: center;
+}
+
+#Principal__Section .Marca {
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0.1rem;
+  scroll-behavior: smooth;
+}
+
+#Principal__Section .Marca .First__Grid {
+  background-image: url(../img/blue_mountains_cliff_edge.jpg);
+  background-position: top;
+  margin: 15px auto;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+#Principal__Section .Marca .First__Grid h2 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+#Principal__Section .Title__Two {
+  text-transform: capitalize;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#Principal__Section .Title__Two a {
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+#Principal__Section .Title__Two a:hover {
+  -webkit-animation-name: Second__Animation;
+          animation-name: Second__Animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.Main__Varierty {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+/*# sourceMappingURL=main.css.map */
