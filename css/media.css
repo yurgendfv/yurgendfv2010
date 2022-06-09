@@ -195,6 +195,7 @@ body {
 }
 
 .Title__Two {
+    padding: 20px;
     text-transform: capitalize;
     margin: 0px auto;
     transition:all;
@@ -240,7 +241,7 @@ body {
     grid-template-columns: 1fr;
     gap: 0.8rem;
 }
-.Variety__One,
+ .Variety__One,
  .Variety__Two,
  .Variety__Three,
  .Variety__Four,
@@ -248,8 +249,7 @@ body {
  .Variety__Six,
  .Variety__Seven, 
  .Variety__Eigth {
-    border-radius : 6px  
-    ;
+    border-radius: 6px;
     background: #51b7e3;
     border: #fff 2px solid; 
 }

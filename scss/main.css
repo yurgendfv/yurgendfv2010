@@ -113,7 +113,7 @@ body {
 
 /* Header para pantallas pequeñas */
 .ownClass {
-  background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
   font-size: 20px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
@@ -132,6 +132,56 @@ body {
 .ownClass ul a:hover {
   -webkit-animation: Primera__Animacion 1.2s ease-in-out forwards;
           animation: Primera__Animacion 1.2s ease-in-out forwards;
+}
+
+/* Footer */
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.Footer .Enlace {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+}
+
+.Footer .Enlace a {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  border-radius: 30px;
+}
+
+.Footer .Enlace a:hover {
+  cursor: pointer;
+  border: 3px white ridge;
+}
+
+.Footer .Social__Network {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+}
+
+.Footer .Social__Network a {
+  padding: 0 30px;
+}
+
+.Footer .Social__Network a i {
+  font-size: 30px;
+  color: #000;
+}
+
+.Footer .Social__Network p {
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 /* Marca and Video */
@@ -169,13 +219,13 @@ body {
   text-transform: capitalize;
   margin: auto;
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #Principal__Section .Title__Two a {
   text-decoration: none;
   color: black;
-  background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
   border-radius: 10px;
   margin: 20px auto;
 }
@@ -193,12 +243,33 @@ body {
           animation-iteration-count: infinite;
 }
 
-.Main__Varierty {
+.Main__Variety {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 0.8rem;
+  gap: 2rem;
+}
+
+.Main__Variety .Variety__One,
+.Main__Variety .Variety__Two,
+.Main__Variety .Variety__Three,
+.Main__Variety .Variety__Four,
+.Main__Variety .Variety__Five,
+.Main__Variety .Variety__Six,
+.Main__Variety .Variety__Seven {
+  border-radius: 6px;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+}
+
+.Main__Variety .Variety__One p,
+.Main__Variety .Variety__Two p,
+.Main__Variety .Variety__Three p,
+.Main__Variety .Variety__Four p,
+.Main__Variety .Variety__Five p,
+.Main__Variety .Variety__Six p,
+.Main__Variety .Variety__Seven p {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

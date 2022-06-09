@@ -53,11 +53,9 @@
         width: 90%;
         height: 100%;
     }
-
-    .Title__Two {
-        margin: 20px auto;
-        font-weight: 600;
-        font-size: xx-large;
+    /* Acomodar la animación */
+    .Title__Two a:hover { 
+        animation: ;
     }
 
     .Main__Variety {

@@ -35,6 +35,49 @@ body {
 }
 
 
+/* Footer */
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        .Enlace {
+            width: 80%;
+            height: 50px;
+            margin: auto;
+            
+            a{
+                text-decoration: none;
+                color: #000;
+                background: $Color__Back;
+                border-radius: 30px;        
+            }
+            a:hover{
+                cursor: pointer;
+                border: 3px white ridge;
+            }
+        }
+
+      .Social__Network {
+        margin-top: 20px;
+        width: 100%;
+        background: $Color__Back;
+
+            a{
+                padding: 0 30px;
+                
+                i{
+                    font-size: 30px;
+                    color: #000;
+                }
+            }
+            p {
+                text-transform: capitalize;
+                font-weight:600
+            }
+      }  
+}
+
 /* Marca and Video */
 
 #Principal__Section {
@@ -69,7 +112,7 @@ body {
             text-transform: capitalize;
             margin: auto;
             padding: 20px;
-            font-size: 20px;
+            font-size: 15px;
             a {
                 text-decoration: none;
                 color: black;
@@ -88,13 +131,24 @@ body {
         }
 }
 
-.Main__Varierty {
+.Main__Variety {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.8rem;
-   
+    gap: 2rem;
 
-        
-
+    .Variety__One,
+    .Variety__Two,
+    .Variety__Three,
+    .Variety__Four,
+    .Variety__Five,
+    .Variety__Six,
+    .Variety__Seven {
+    border-radius: 6px;
+    background: $Color__Back;
+        p {
+            display: none;
+        }
+    } 
 }
+
