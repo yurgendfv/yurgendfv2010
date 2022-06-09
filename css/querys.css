@@ -54,8 +54,9 @@
         height: 100%;
     }
     /* Acomodar la animación */
-    .Title__Two a:hover { 
-        animation: ;
+    #Principal__Section .Title__Two  { 
+        padding: 30px;
+        font-size: 30px;
     }
 
     .Main__Variety {
@@ -76,7 +77,6 @@
         font-size: 16px;
     }
     .Variety__One h3 {
-        border-bottom: #fff 2px solid;
         margin-bottom: 3px;
         font-size: 25px;
     }
@@ -96,7 +96,6 @@
     }
 
     .Variety__Two h3 {
-        border-bottom: 2px #fff solid ;
         font-size: 20px;
     }
      
@@ -186,7 +185,7 @@
 }
 
     .Title__Routes {
-        margin-top: 86px;
+        margin-top: 30px;
         padding: 20px;
         
     }
@@ -197,14 +196,14 @@
         font-size: 60px;
     }
 
-    .Title__Routes--Second {
+    .Rutas .Title__Routes--Second {
         margin: 10px auto;
         font-size: 60px;
         border-bottom: 2px #000 solid ;
-        background: linear-gradient(1deg, #51b7e3, #fff);
+        background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
     }
 
-    .Rutas__Listas {
+    .Rutas .Rutas__Listas {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     }
@@ -212,7 +211,7 @@
 
 @media (min-width: 1024px) {
 
-    .Rutas__Listas {
+    .Rutas .Rutas__Listas {
         width: 100%;
         margin: auto;
         grid-template-columns: repeat(4,1fr);

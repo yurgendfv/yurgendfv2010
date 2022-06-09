@@ -12,38 +12,36 @@
     }
 
     50% {
-        background: #fff;
+        background: #b1afaf;
         color: black;
         border-radius: 15px;
         
     }
 
     75% {
-        background: #9fe0e0d9 ;
-        color: #fff;
+        background: #538ba2 ;
         border-radius: 20px;
         transform: translateX(-25%);
         }
 
     100% {
-        background: linear-gradient(100deg, #51b7e3, #77c9ec, rgb(177, 175, 175) );
+        background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf ) 30%;;
         color: #000;
         border-radius: 30px;
         transform: translateX(0%);
         }
 } 
 
-    //Animacion de animate.css pero creada desde cero en mi codigo para poder hacerla funcionar con Hover 
-
-
 @keyframes Second__Animation  {
 
     0% {
         border: 2px rgb(151, 149, 149) dashed;
+        
     }
 
     25% {
         font-size: 15px;
+
     }
 
     40% {
@@ -57,4 +55,41 @@
     100% {
         border-bottom: 5px rgb(3, 46, 57) solid;
     }
+}
+
+@keyframes Third__Animation {
+
+    0%{
+    border-radius: 0px 10px 0px 0px;
+    background:  #538ba2;
+    }
+    10%{
+    border-radius: 10px 20px 10px 20px;
+    background:  #538ba2;
+    }
+    20%{
+    border-radius: 10px 30px 10px 30px;
+    background: #66a6c1 
+    }
+    30%{
+    border-radius: 15px 30px 15px 30px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf ) 30%;
+    }
+    60%{
+    border-radius: 20px 40px 20px 40px;
+    background: #538ba2;
+    }
+    70%{
+    border-radius: 20px 45px 20px 45px;
+    background: #538ba2;
+    }
+    80%{
+    border-radius: 25px 50px 20px 50px;
+    background: #66a6c1;  
+    }
+    100%{
+    border-radius: 30px 60px 30px 60px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf ) 30%;
+    }
+
 }

@@ -12,19 +12,18 @@
             transform: translateX(25%);
   }
   50% {
-    background: #fff;
+    background: #b1afaf;
     color: black;
     border-radius: 15px;
   }
   75% {
-    background: #9fe0e0d9;
-    color: #fff;
+    background: #538ba2;
     border-radius: 20px;
     -webkit-transform: translateX(-25%);
             transform: translateX(-25%);
   }
   100% {
-    background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
     color: #000;
     border-radius: 30px;
     -webkit-transform: translateX(0%);
@@ -43,19 +42,18 @@
             transform: translateX(25%);
   }
   50% {
-    background: #fff;
+    background: #b1afaf;
     color: black;
     border-radius: 15px;
   }
   75% {
-    background: #9fe0e0d9;
-    color: #fff;
+    background: #538ba2;
     border-radius: 20px;
     -webkit-transform: translateX(-25%);
             transform: translateX(-25%);
   }
   100% {
-    background: linear-gradient(100deg, #51b7e3, #77c9ec, #b1afaf);
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
     color: #000;
     border-radius: 30px;
     -webkit-transform: translateX(0%);
@@ -99,6 +97,76 @@
   }
 }
 
+@-webkit-keyframes Third__Animation {
+  0% {
+    border-radius: 0px 10px 0px 0px;
+    background: #538ba2;
+  }
+  10% {
+    border-radius: 10px 20px 10px 20px;
+    background: #538ba2;
+  }
+  20% {
+    border-radius: 10px 30px 10px 30px;
+    background: #66a6c1;
+  }
+  30% {
+    border-radius: 15px 30px 15px 30px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  }
+  60% {
+    border-radius: 20px 40px 20px 40px;
+    background: #538ba2;
+  }
+  70% {
+    border-radius: 20px 45px 20px 45px;
+    background: #538ba2;
+  }
+  80% {
+    border-radius: 25px 50px 20px 50px;
+    background: #66a6c1;
+  }
+  100% {
+    border-radius: 30px 60px 30px 60px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  }
+}
+
+@keyframes Third__Animation {
+  0% {
+    border-radius: 0px 10px 0px 0px;
+    background: #538ba2;
+  }
+  10% {
+    border-radius: 10px 20px 10px 20px;
+    background: #538ba2;
+  }
+  20% {
+    border-radius: 10px 30px 10px 30px;
+    background: #66a6c1;
+  }
+  30% {
+    border-radius: 15px 30px 15px 30px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  }
+  60% {
+    border-radius: 20px 40px 20px 40px;
+    background: #538ba2;
+  }
+  70% {
+    border-radius: 20px 45px 20px 45px;
+    background: #538ba2;
+  }
+  80% {
+    border-radius: 25px 50px 20px 50px;
+    background: #66a6c1;
+  }
+  100% {
+    border-radius: 30px 60px 30px 60px;
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0%;
@@ -117,6 +185,7 @@ body {
   font-size: 20px;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
+  border-radius: 0px 0px 30% 0px;
 }
 
 .ownClass .Logo {
@@ -171,12 +240,13 @@ body {
 }
 
 .Footer .Social__Network a {
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 .Footer .Social__Network a i {
   font-size: 30px;
   color: #000;
+  margin: 10px auto;
 }
 
 .Footer .Social__Network p {
@@ -259,8 +329,32 @@ body {
 .Main__Variety .Variety__Five,
 .Main__Variety .Variety__Six,
 .Main__Variety .Variety__Seven {
-  border-radius: 6px;
+  border-radius: 30px 0px;
+  border: transparent;
   background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+}
+
+.Main__Variety .Variety__One h3,
+.Main__Variety .Variety__Two h3,
+.Main__Variety .Variety__Three h3,
+.Main__Variety .Variety__Four h3,
+.Main__Variety .Variety__Five h3,
+.Main__Variety .Variety__Six h3,
+.Main__Variety .Variety__Seven h3 {
+  padding: 20px 0px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.Main__Variety .Variety__One img,
+.Main__Variety .Variety__Two img,
+.Main__Variety .Variety__Three img,
+.Main__Variety .Variety__Four img,
+.Main__Variety .Variety__Five img,
+.Main__Variety .Variety__Six img,
+.Main__Variety .Variety__Seven img {
+  margin-bottom: 20px;
+  border-radius: 30px 0px;
 }
 
 .Main__Variety .Variety__One p,
@@ -271,5 +365,124 @@ body {
 .Main__Variety .Variety__Six p,
 .Main__Variety .Variety__Seven p {
   display: none;
+}
+
+/* Inicio de pagaina de rutas. */
+.Title__Routes {
+  width: 98%;
+  height: auto;
+  margin: 30px auto 0px auto;
+  text-align: center;
+}
+
+.Title__Routes h1 {
+  width: 60%;
+  margin: auto;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  border-radius: 20px;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+}
+
+.Title__Routes h3 {
+  width: 50%;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px black solid;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  border-radius: 30px;
+  font-style: italic;
+  font-weight: none;
+}
+
+.Rutas {
+  width: 98%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.Rutas .Rutas__Listas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas a {
+  text-decoration: none;
+  color: black;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas a span {
+  width: 90%;
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  border-radius: 30%;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas a span:hover {
+  background: transparent;
+  color: #000;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas a:hover {
+  width: 90%;
+  margin: 0px auto;
+  -webkit-animation-name: Third__Animation;
+          animation-name: Third__Animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas img {
+  margin: 10px auto;
+  width: 80%;
+  height: auto;
+  border-radius: 30px 0px;
+}
+
+.Rutas .Rutas__Listas .Rutas__Rutas p {
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+}
+
+.Rutas .Title__Routes--Second {
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px black solid;
+  background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+  border-radius: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: none;
+  font-size: 40px;
 }
 /*# sourceMappingURL=main.css.map */
