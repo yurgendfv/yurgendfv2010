@@ -221,14 +221,27 @@
 
 /* QUERYS CREATE YOUR ROUTE */
 
+@media (min-width: 768px) {
+
+    .Title__Second {
+        font-size: 60px;
+    }
+
+    .Form {
+        margin: 30px auto;
+        font-size: 30px;
+    }
+
+    
+}
+
 @media (min-width: 1024px) {
 
     .Title__Second {
         font-size: 100px;
     }
-    .Image__Create{
+    .Form .Image__Create {
         width: 90%;
-        border-bottom: #000 5px solid;
     }
     .Image__Create img {
         height: 300px;
@@ -238,24 +251,36 @@
 /* QUERYS RECOMENDATIONS */
 
 @media (min-width: 768px) {
-    .Section__First {
+
+    #Recomendaciones .Recomendations__Title{
+        font-size: 60px;
+    }
+
+    #Recomendaciones .Section__General .Section__First {
         grid-template-columns: 1fr 1fr;
     }
 
-    .Section__First .Section__Sub {
+    #Recomendaciones .Section__General .Section__First .Section__Sub {
         background: none;
         border: none;
+        margin-top: 20px;
     }
 
     .Section__First .Section__Sub span {
-        background: #51b7e3;
-        border-bottom: #000 3px solid;
+    width: 100%;
+    height: auto;
+    
+
+    background: linear-gradient(100deg, #66a6c1, #538ba2, #b1afaf) 30%;
+    border-radius: 20px 0px;
+    }
+    
+    #Recomendaciones .Before__Footer{
+        font-size: 30px;
     }
 
-    .Recomendations__Title {
-        margin-top: 100px;
 }
-}
+
 
 @media (min-width: 768px) {
 
@@ -275,8 +300,11 @@
 
 @media (min-width: 1024px) {
     
-}
+
         .Title__Contact {
             font-size: 60px;
         }
+}
+
+
 

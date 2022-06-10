@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
-    background-color: #276e90 !important;
+    background-color: #276e9033 !important;
 }
 
 /* Header para pantallas pequeñas */
@@ -42,6 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+
         .Enlace {
             width: 80%;
             height: 50px;
@@ -63,6 +64,7 @@ body {
         margin-top: 20px;
         width: 100%;
         background: $Color__Back;
+        border-radius: 30% 0% 0px 0px;
 
             a{
                 padding: 0 40px;
@@ -170,23 +172,23 @@ body {
 /* Inicio de pagaina de rutas. */
 
 .Title__Routes {
-width: 98%;
+width: 90%;
 height: auto;
 margin: 30px auto 0px auto;
 text-align: center;
 
     h1{
-    width: 60%;
+    width: 80%;
     margin: auto;
     background: $Color__Back;
-    border-radius: 20px;
+    border-radius: $Border__Comun;
     font-size: 60px;
     font-style: italic;
     text-align: center;
     }
 
     h3{
-    width: 50%;
+    width: 80%;
     font-size: 40px;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -194,7 +196,7 @@ text-align: center;
     margin-right: auto;
     border-bottom: 3px black solid;
     background: $Color__Back; 
-    border-radius: 30px;  
+    border-radius: $Border__Comun;  
     font-style: italic;
     font-weight: none;
     }
@@ -259,7 +261,7 @@ text-align: center;
     }
 
     .Title__Routes--Second{
-    width: 50%;
+    width: 80%;
 
     margin-bottom: 30px;
     margin-top: 20px;
@@ -268,7 +270,7 @@ text-align: center;
 
     border-bottom: 3px black solid;
     background: $Color__Back; 
-    border-radius: 30px;  
+    border-radius: $Border__Comun;  
     text-align: center;
     font-style: italic;
     font-weight: none; 
@@ -278,7 +280,133 @@ text-align: center;
 
 /* Page create your route */
 
+.Title__Second {
+    width: 90%;
+    margin: 30px auto;
+    background: $Color__Back;
+    border-radius: $Border__Comun;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
 
+.Form {
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+    background: $Color__Back;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $Border__Comun;
+    .Image__Create{
+        height: auto;
+        margin: 30px auto ;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 90%;
+            border-radius: $Border__Comun;
+        }
+    }
+    .Form__Form{
+        width: 90%;
+        height: auto;
+        margin: 0px auto 20px auto;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        font-size: auto;
+        .Button{
+        margin: 5px auto;
+            input{
+            border: none;
+            border-bottom: #000 2px solid;
+            border-radius: 10px;
+            background: $Color__Back; 
+            }
+            #Ruta{
+            border-bottom: 2px black solid;
+            border-radius: 10px;
+            background: $Color__Back;     
+            }
+            #Options{
+            border-bottom:#000 2px solid ;
+            border-radius: 10px;
+            background: $Color__Back;
+            }
+            #coments{
+            width: 80%;
+            height: auto;
+            background: $Color__Back;
+            border: 0.5px #000 solid;    
+            }
+        .Invitation{
+            width: 50%;
+            height: auto;
+            margin: 10px auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        }  
+    }
+}
+/* Page of Recomendation */
 
+#Recomendaciones {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    .Recomendations__Title {
+    text-align: center;
+    font-size: 40px;
+    border-radius: $Border__Comun;
+    font-style: italic;
+    background:$Color__Back;
+    }
+    .Recomendations__Subtitle {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 40px;
+        background: $Color__Back;
+        border-radius: $Border__Comun;
+    }
+    .Header__Section{
+        width: 100%;
+        height: 100px;
+    }
+    .Section__General{
+        .Section__First {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5em;
+            margin: 10px auto;
+            .Section__Sub {
+                width: 100%;
+                height: auto;
+                text-align: center;
+                align-items: center;
+                font-size: 30px;
+                background: $Color__Back;
+                border-radius: $Border__Comun;
+            }
+            ul{
+                text-align-last: center;
+                li{
+                list-style: devanagari;
+                margin: 20PX 10px
+                }
+            }
+        }
+    }
+    .Before__Footer {
+        background: $Color__Back;
+        text-align: center;
+        text-transform: capitalize;
+        border-radius: $Border__Comun;
+    }
+}
 
 
