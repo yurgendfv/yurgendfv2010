@@ -18,13 +18,15 @@ body {
 /* Header para pantallas pequeñas */
 
 .ownClass {
+    height: auto !important;
+    margin-bottom: 30px;
     background: $Color__Back;
     font-size: 20px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     border-radius: 0px 0px 30% 0px;
     .Logo {
-        width: 200px;     
+        width: 100px;     
     }
         ul {
             align-items: center;
