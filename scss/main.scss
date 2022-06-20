@@ -411,4 +411,83 @@ text-align: center;
     }
 }
 
+.Contact{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    & .Title__Contact{
+        margin: 10px auto;
+        background: $Color__Back;   
+        width: 90%;
+        text-align: center;
+        border-radius: $Border__Comun;
+        h1{
+            width: 85%;
+            margin: 0 auto;
+            font-size: 30px;
+        }
+    }   
+    & h5{
+        width: 95%;
+        height: auto;
+        margin: 10px auto 20px auto;
+        letter-spacing: 0.5px;
+        word-spacing: 3px;
+        text-align: center;
+    }
+    .Contact__Second{
+        width: 95%;
+        margin: 5px auto;
+        background-image: url(../img/header__contactanos.jpg);
+        background-repeat: no-repeat;
+        background-size: cover 100%;
+        background-position: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .Contact__Primera{
+            .Contact__Image{
+                display: none;
+            }
+        }
+
+        & Form{
+            .Contact__List{
+            margin: 10px auto;
+            font-size: 20px;
+            color: #fff;
+            text-shadow: 0.1rem 0.1rem black;
+            label  {
+                border-left: 3px #fff solid;
+                border-radius: 40%;
+            }
+
+                    #Nombre{
+                    background: transparent;
+                    border: none;
+                    cursor: pointer; }
+                    #Apellido{
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;}
+                    #Email{
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;}
+                    #Sugerencias{
+                    align-items: center;
+                    background: none;
+                    width: 90%;
+                    height: 200px;
+                    margin: 10px;
+                    border: 0.5px #fff dashed;
+                    border-radius: 20%;
+                    color: #fff;}
+                
+            }
+        }
+    }
+}
 

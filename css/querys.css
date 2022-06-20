@@ -281,29 +281,38 @@
 
 }
 
+/* Querys Contact */
 
 @media (min-width: 768px) {
-
-
-        .Contact__Image {
-            display: flex;
-            height: 100%;
-            margin: 0px auto
-        }
-
-        .Contact__Second {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .Contact .Title__Contact h1 {
+        font-size: 60px;
+    }
 }
 
 @media (min-width: 1024px) {
     
+    .Contact .Title__Contact h1{
+        font-size: 100px;
+    }
 
-        .Title__Contact {
-            font-size: 60px;
-        }
+    .Contact .Contact__Second{
+        background: url(../img/Background.jpg) center;
+        background-size: cover;
+    }
+    .Contact .Contact__Second Form .Contact__List{
+    color: #000;
+    text-shadow: 0.1rem 0.1rem #fff;
+    font-size: 35px;
+
+    }
+    .Contact .Contact__Second Form .Contact__List label {
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+    border-radius: 40%;    
+    }
+    .Contact .Contact__Second form .Contact__List #Sugerencias {
+        color: #000;
+    }
 }
 
 

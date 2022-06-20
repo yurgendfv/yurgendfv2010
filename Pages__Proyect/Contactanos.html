@@ -7,9 +7,9 @@
     <!-- Description, Title and keywords -->
     <meta name="descrition" content="Identificate y comunicate con nostros dejandonos tus inquietudes, solicitudes pues todo nos ayuda a mejorar para ti.">
     <meta name="keywords" content="Contacto, Contactanos, Nombres, Sugerencias, Email, Nuemeros de telefono">
-    <title>Crea tu ruta</title>
+    <title>Contactanos</title>
     <!-- Imagen de buscador -->
-    <link rel="shortcut icon" href="../img/Vamos al cerro edit.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/Logo__Vamos__al__cerro.png" type="image/x-icon">
     <!-- BIBLIOTECA DE ICONOS FONTAWESOME -->
     <script src="https://kit.fontawesome.com/e902341a70.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,8 @@
     <!-- FUENTE GOOGLE -->
    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
    <!-- ESTILOS CSS -->
-   <link rel="stylesheet" href="../css/media.css">
+   <link rel="stylesheet" href="../scss/main.css">
+
    <link rel="stylesheet" href="../css/querys.css">
    <!-- Bosstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -27,7 +28,7 @@
     <Header>
         <nav class="navbar navbar-expand-lg ownClass ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../img/Logo__Vamos__al__cerro.png" alt=""></a>
+              <a class="navbar-brand" href="../index.html"><img class="Logo" src="../img/Logo__Vamos__al__cerro.png" alt="Logo__Pagina"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -58,37 +59,38 @@
        
 <section class="Contact">
 
-    <div>
-        <h1 class="Title__Contact">Contactanos</h1>
+    <div class="Title__Contact">
+        <h1>Contactanos</h1>
     </div>
 
     <div>
         <h5>Por si quedaste con alguna duda, tienes alguna sugrencia o idea que nos quieras plantear para mejorar la comunidad o cualquier cosa que consideres necesario preguntarnos, contactanos a traves de este formulario dejadonos todos tus comentarios que seran muy bien recibidos y recibiras, asimismo, una respuesta. ¡Disfruta tu salida!</h5>
 
     </div>
+
     <div class="Contact__Second">
         
-        <div class="Contact__Primera">
+          <div class="Contact__Primera">
 
             <img class="Contact__Image " src="../img/header__contactanos.jpg" alt="Contact">
-       </div>
+          </div>
 
         <form action="enviar.PHP">  
             <div class="Contact__List">
                 <label for="Nombre">Nombre</label>
                 <input type="text" id="Nombre">
             </div>
-            <div        class="Contact__List">
+            <div class="Contact__List">
                 <label for="Apellido">Apellido</label>
                 <input type="text" id="Apellido">
             </div>
             <div class="Contact__List">
-                <label for="email">Correo Electronico</label>
-                <input type="email" id="email">
+                <label for="Email">Correo Electronico</label>
+                <input type="Email" id="Email">
             </div> 
             <div class="Contact__List">
                 <p>Dejanos tu comentario o sugerencia.</p>     
-                <textarea name="Sugerencias y Comentarios" id="Sugerencias" cols="40" rows="15"></textarea>
+                <textarea name="Sugerencias y Comentarios" id="Sugerencias"></textarea>
             </div>    
 
             <input type="submit" value="Enviar">
