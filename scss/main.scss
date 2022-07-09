@@ -3,7 +3,9 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0%;
@@ -25,6 +27,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
     border-radius: 0px 0px 30% 0px;
+    text-shadow: $Shadow;
     .Logo {
         width: 100px;     
     }
@@ -44,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-shadow: $Shadow;
 
         .Enlace {
             width: 80%;
@@ -103,13 +107,19 @@ body {
             .First__Grid {
                 background-image: url(../img/blue_mountains_cliff_edge.jpg);
                 background-position: top;
-                margin: 15px auto;
+                margin: 40px auto 0px auto;
                 font-weight: 700;
                 border-radius: 20px;
 
                 & h2{
                     font-size: 30px;
                     font-style: italic;
+                }
+
+                & p{
+                    margin-bottom: 1rem;
+                    text-transform: capitalize;
+                    letter-spacing: 0.5px;
                 }
             }
         }
@@ -119,6 +129,7 @@ body {
             margin: auto;
             padding: 20px;
             font-size: 15px;
+            text-shadow: $Shadow;
             a {
                 text-decoration: none;
                 color: black;
@@ -153,6 +164,7 @@ body {
     border-radius: 30px 0px;
     border: transparent;
     background: $Color__Back;
+    text-shadow: $Shadow;
         h3{
             padding: 20px 0px;
             font-size: 20px;
@@ -160,7 +172,7 @@ body {
         }
         img{
             margin-bottom: 20px ;
-             border-radius: $Border__Comun;
+            border-radius: $Border__Comun;
         }
         p {
             display: none;
@@ -176,14 +188,20 @@ body {
 .Title__Routes {
 width: 90%;
 height: auto;
-margin: 30px auto 0px auto;
+
+margin: 100px auto 0px auto;
 text-align: center;
+text-shadow: -2px -2px 4px white;
 
     h1{
     width: 80%;
+    
     margin: auto;
+    
     background: $Color__Back;
     border-radius: $Border__Comun;
+    border-bottom: 3px black solid;
+    
     font-size: 60px;
     font-style: italic;
     text-align: center;
@@ -191,14 +209,18 @@ text-align: center;
 
     h3{
     width: 80%;
+
     font-size: 40px;
+
     margin-bottom: 30px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+
     border-bottom: 3px black solid;
     background: $Color__Back; 
     border-radius: $Border__Comun;  
+    
     font-style: italic;
     font-weight: none;
     }
@@ -222,6 +244,7 @@ text-align: center;
             flex-wrap: wrap;
             font-size: 18px;
             margin: 10px auto;
+            text-shadow: $Shadow;
            
             a{
                 text-decoration: none;
@@ -255,10 +278,6 @@ text-align: center;
             height: auto;
             border-radius: 30px 0px;
             }
-
-            p{
-                background: $Color__Back;
-            }
         }
     }
 
@@ -273,6 +292,8 @@ text-align: center;
     border-bottom: 3px black solid;
     background: $Color__Back; 
     border-radius: $Border__Comun;  
+
+    text-shadow: $Shadow;
     text-align: center;
     font-style: italic;
     font-weight: none; 
@@ -284,12 +305,17 @@ text-align: center;
 
 .Title__Second {
     width: 90%;
-    margin: 30px auto;
+
+    margin: 90px auto 0px;
+    
     background: $Color__Back;
     border-radius: $Border__Comun;
-    font-size: 40px;
+    border-bottom: 3px black solid;;
+    
+    font-size: 60px;
     font-style: italic;
     text-align: center;
+    text-shadow: $Shadow;
 }
 
 .Form {
@@ -316,10 +342,13 @@ text-align: center;
         width: 90%;
         height: auto;
         margin: 0px auto 20px auto;
+
         display: flex;
         flex-flow: column nowrap;
+
         text-align: center;
         font-size: auto;
+        text-shadow: $Shadow;
         .Button{
         margin: 5px auto;
             input{
@@ -342,7 +371,7 @@ text-align: center;
             width: 80%;
             height: auto;
             background: $Color__Back;
-            border: 0.5px #000 solid;    
+            border: 0.5px #000 solid;   
             }
         .Invitation{
             width: 50%;
@@ -360,14 +389,18 @@ text-align: center;
 #Recomendaciones {
     width: 90%;
     height: auto;
-    margin: 20px auto;
+    margin: 90px auto 0px;
+    text-shadow: $Shadow;
+
     .Recomendations__Title {
+    width: 95%;
+    margin: 10px auto;
     text-align: center;
-    font-size: 40px;
     border-radius: $Border__Comun;
     font-style: italic;
     background:$Color__Back;
     }
+    
     .Recomendations__Subtitle {
         margin: 20px auto;
         text-align: center;
@@ -418,11 +451,12 @@ text-align: center;
     display: flex;
     flex-flow: column nowrap;
     & .Title__Contact{
-        margin: 10px auto;
+        margin: 90px auto 20px;
         background: $Color__Back;   
         width: 90%;
         text-align: center;
         border-radius: $Border__Comun;
+        text-shadow: $Shadow;
         h1{
             width: 85%;
             margin: 0 auto;
@@ -447,6 +481,7 @@ text-align: center;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        border-radius: $Border__Comun;
         .Contact__Primera{
             .Contact__Image{
                 display: none;
@@ -483,8 +518,8 @@ text-align: center;
                     height: 200px;
                     margin: 10px;
                     border: 0.5px #fff dashed;
-                    border-radius: 20%;
-                    color: #fff;}
+                    border-radius: $Border__Comun;
+                    color: #fff;}   
                 
             }
         }

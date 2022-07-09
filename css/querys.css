@@ -46,7 +46,7 @@
 
     .Marca .First__Grid h2,
     .Marca .First__Grid p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .Marca .Second__Grid iframe   {
@@ -121,18 +121,19 @@
    @media (min-width: 1024px) 
    {
        .Marca .First__Grid {
-        height: 150px;
+        width: 95%;
         font-size: 30px;
         }
-        .Marca .First__Grid :first-child {
-            padding: 10px;
+
+        .Marca .First__Grid h2 {
+            font-size: 50px;
         }
-       
+        
       .Marca .Second__Grid iframe
        {
         height: 200px;
         width: 95%;
-        margin-top: -38px;
+        margin-top: 8px;
        } 
 
        .Main__Variety {
@@ -145,6 +146,10 @@
 
        .Main__Variety .Variety__Two {
         grid-row: 1/4;
+       }
+
+       .Main__Variety .Variety__Two img{
+        height: 50%;
        }
 
        .Main__Variety .Variety__Seven{
@@ -166,33 +171,15 @@
    /* QUERYS ROUTES. */
    @media (min-width: 768px){
 
-   .Header__Buscador--Second {
-    display: inline;
-    position: absolute;
-    top: 12px;
-    right: 65px;  
-    font-size: 25px;
-   }
-
-   .Header__Buscador--Second label i {
-    margin-right: 156px;
-   }
-
-   .Header__Buscador--Second input {
-    background: linear-gradient(1deg, #51b7e3, #fff);
-    opacity: 0.9;
-    border: none;
-}
-
     .Title__Routes {
-        margin-top: 30px;
+        margin-top: 60px;
         padding: 20px;
         
     }
 
     .Title__Routes h1,
     .Title__Routes h3 {
-        margin: 10px auto;
+        margin: 10px auto 0px;
         font-size: 60px;
     }
 
@@ -251,6 +238,10 @@
 /* QUERYS RECOMENDATIONS */
 
 @media (min-width: 768px) {
+
+    #Recomendaciones .Header__Section{
+        height: 200px;
+    }
 
     #Recomendaciones .Recomendations__Title{
         font-size: 60px;
